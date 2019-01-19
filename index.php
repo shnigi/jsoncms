@@ -18,17 +18,16 @@ if($validUser) {
   <?php include 'head.php';?>
 </head>
 <body>
-
-<div class="login-page">
-  <div class="form">
-    <form class="login-form" action="" method="post">
-      <input type="text" name="username" placeholder="username"/>
-      <input type="password" placeholder="password" id="password" name="password"/>
-      <div class="login-error"><?= $errorMsg ?></div>
-      <button type="submit" name="loginform">Login</button>
-    </form>
+  <div class="login-page">
+    <h1 class="text-center">Site admin login</h1>
+    <div class="form">
+      <form class="login-form" action="" method="post">
+        <input type="text" name="username" placeholder="username"/>
+        <input type="password" placeholder="password" id="password" name="password"/>
+        <div class="login-error"><?= $errorMsg ?></div>
+        <button type="submit" name="loginform">Login</button>
+      </form>
+    </div>
   </div>
-</div>
-
 </body>
 </html>

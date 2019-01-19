@@ -54,11 +54,9 @@
 }
 
 body {
-  background: #76b852; /* fallback for old browsers */
-  background: -webkit-linear-gradient(right, #76b852, #8DC26F);
-  background: -moz-linear-gradient(right, #76b852, #8DC26F);
-  background: -o-linear-gradient(right, #76b852, #8DC26F);
-  background: linear-gradient(to left, #76b852, #8DC26F);
+ background: #ff9966;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to left, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to left, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      
@@ -72,4 +70,13 @@ body {
 
 .alpaca-field-array {
   border: none !important;
+}
+
+.alpaca-form, .alpaca-container-label {
+ color: white;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 20px;
 }
