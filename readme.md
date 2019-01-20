@@ -20,6 +20,8 @@ Edit databaseSchema.js to make your database. Schema needs options:
 
 settings.php has allowed domains and credentials info to login.
 
+Allowed domains in a form of: "nikiahlskog.com"
+
 Form builder (Not supported):
 
 http://www.alpacajs.org/demos/form-builder/form-builder.html
