@@ -1,19 +1,17 @@
 {
   "meneillaan": [
     {
-      "kohde": "joku mesta",
+      "kohde": "test",
       "toimenpiteet": [
-        "asdasdasd",
         "asdasd"
       ]
     }
   ],
   "valmistuneet": [
     {
-      "kohde": "toinen mesta",
+      "kohde": "test",
       "toimenpiteet": [
-        "grddgrgeddr",
-        "hfthfthfth"
+        "asdasd"
       ]
     }
   ]

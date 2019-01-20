@@ -3,6 +3,13 @@
     if(!isset($_SESSION['login'])) {
         header('location:index.php'); die();
     }
+    // $database = fopen("database.json", "a") or die("Unable to open file!");
+    $jsonData = "{}";
+    $database = file_exists("database.json");
+    if ($database != 1) {
+      $database = fopen("database.json", "w") or die("Unable to open file!");
+      fwrite($database, $jsonData);
+    }
 ?>
 
 <!doctype html>

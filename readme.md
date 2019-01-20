@@ -2,6 +2,24 @@ Simple JSON based flat file database and admin panel
 
 Forms generated with Alpaca Forms: http://www.alpacajs.org/
 
-Edit databaseSchema.js to make your database.
+Edit databaseSchema.js to make your database. Schema needs options:
 
-Index.php has the login variables
+    "options": {
+        "form": {
+            "buttons": {
+                "submit": {
+                    "click": function () {
+                        var value = this.getValue();
+                        var jsonData = JSON.stringify(value, null, "  ");
+                        postData(jsonData);
+                    }
+                }
+            }
+        }
+    }
+
+settings.php has allowed domains and credentials info to login.
+
+Form builder (Not supported):
+
+http://www.alpacajs.org/demos/form-builder/form-builder.html
