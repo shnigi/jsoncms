@@ -22,6 +22,9 @@ settings.php has allowed domains and credentials info to login.
 
 Allowed domains in a form of: "nikiahlskog.com"
 
+settings and handledata.js has variable for databasefile (name and file extension) 
+in case that some server doesnt support JSON (iis)
+
 Form builder (Not supported):
 
 http://www.alpacajs.org/demos/form-builder/form-builder.html

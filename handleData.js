@@ -1,3 +1,5 @@
+const databaseFile = 'database.txt';
+
 const postData = (jsonData) => {
     fetch('saveData.php', {
         method: 'post',
@@ -29,6 +31,6 @@ const readDataBase = (database) => {
 };
 
 // load database
-fetch("database.json")
+fetch(databaseFile)
   .then(response => response.json())
   .then(json => readDataBase(json));

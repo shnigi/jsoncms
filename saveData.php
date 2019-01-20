@@ -7,7 +7,7 @@ $domain = parse_url($referer);
 if(in_array( $domain['host'], $allowedDomains)) {
     session_start();
     $jsonData = file_get_contents('php://input');
-    $database = fopen("database.json", "w") or die("Unable to open file!");
+    $database = fopen($databaseFile, "w") or die("Unable to open file!");
     fwrite($database, $jsonData);
     fclose($database);
     echo json_encode('success');
