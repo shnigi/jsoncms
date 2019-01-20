@@ -1,4 +1,4 @@
-<title>Shnigi CMS</title>
+<title>JSON CMS</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
