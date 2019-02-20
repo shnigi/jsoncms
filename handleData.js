@@ -1,4 +1,5 @@
-const databaseFile = 'database.txt';
+const file = 'database.txt';
+const databaseFile = `${file}?v=${Date.now()}`;
 
 const postData = (jsonData) => {
     fetch('saveData.php', {
