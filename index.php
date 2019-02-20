@@ -14,7 +14,10 @@ if(isset($_POST["loginform"])) {
 if($validUser) {
    header("Location: editor.php"); die();
 }
+$protocol = stripos($_SERVER['SERVER_PROTOCOL'],'https') === true ? 'https://' : 'http://';
 ?>
+
+
 
 <!DOCTYPE html>
 <html>
@@ -32,6 +35,7 @@ if($validUser) {
         <button type="submit" name="loginform">Login</button>
       </form>
     </div>
+    <a href="<?php echo $protocol . $_SERVER['HTTP_HOST']; ?>"><div class="text-center">Go back to the website</div></a>
   </div>
 </body>
 </html>
