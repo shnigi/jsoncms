@@ -28,3 +28,11 @@ in case that some server doesnt support JSON (iis)
 Form builder (Not supported):
 
 http://www.alpacajs.org/demos/form-builder/form-builder.html
+
+Get data on website:
+
+    fetch(`./jsoncms/database.txt?v=${Date.now()}`)
+    .then(response => response.json())
+    .then(json => {
+       console.log('json', json);
+    });
